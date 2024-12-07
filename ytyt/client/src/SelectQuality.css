@@ -1,0 +1,31 @@
+.quality-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quality-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.quality-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.quality-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.quality-button:active {
+    background-color: #004494;
+}

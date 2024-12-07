@@ -1,0 +1,107 @@
+/* Input field */
+#SearchLink {
+    background-color: #f9f9f9;
+    font-size: 1rem; /* Use relative font size */
+    width: 80%;
+    padding: 10px 10px 10px 40px; /* Adjust padding to make space for the icon */
+    border: 2px solid #4ebe52;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add margin for better spacing */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+#inputLabel { display: block; /* Ensure it takes up the full width */ 
+    font-size: 1.2rem; /* Larger font size for emphasis */ 
+    color: #263a3d; /* Darker color for better contrast */ 
+    margin-bottom: 10px; /* Space below the label */ 
+    text-align: center; /* Center the text */
+}
+/* Icon */
+.findIcon {
+    position: relative;
+    left: 30px;
+    transform: translateY(26%);
+    width: 20px;
+    height: 20px;
+}
+
+/* Input focus styles */
+#SearchLink:focus {
+    border-color: #007BFF; /* Border color on focus */
+    background-color: #e0f7fa; /* Background color on focus */
+    outline: none;
+}
+
+#ConvertButton {
+    width: 40%; /* Consistent width for visibility */
+    margin-top: 3%;
+    font-size: 1rem; /* Relative font size for consistency */
+    border-radius: 5px; /* Smooth rounded corners */
+    background: linear-gradient(135deg, #51b856, #4cae4c); /* Gradient background for visual interest */
+    color: #fff; /* White text color for contrast */
+    padding: 10px; /* Adequate padding for better appearance */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.3s, border 0.3s, background-color 0.3s; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+#ConvertButton:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    background: linear-gradient(135deg, #4cae4c, #51b856); /* Reverse gradient on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  
+    #SearchLink {
+        width: 90%;
+        font-size: 0.95rem;
+    }
+    #ConvertButton {
+        width: 50%;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+   
+    #SearchLink {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+    #ConvertButton {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #SearchLink {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+    #ConvertButton {
+        width: 70%;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+   
+    #SearchLink {
+        font-size: 0.8rem;
+        padding: 10px 10px 10px 35px;
+    }
+    .findIcon {
+        left: 25px;
+    }
+    #ConvertButton {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}

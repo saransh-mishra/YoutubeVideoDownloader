@@ -1,0 +1,68 @@
+/* Ensure the body and html elements occupy the full viewport */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Container for the content below the header */
+.box-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */ 
+    align-items: center; /* Center vertically */ 
+    width: 100%; /* Full width */
+    height: calc(100vh - 30px); /* Subtract the height of the header */
+    background-color: #f0f0f0;
+    margin-top: 30px; /* To avoid overlap with the fixed header */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 20px;
+}
+
+/* Inner container with enhanced styles */
+.inner-container {
+    width: 80%;
+    max-width: 800px; /* Increased max-width for better responsiveness */
+    padding: 20px;
+    background-color: #ffffff70;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 15px; /* Add border-radius for better aesthetics */
+    transition: box-shadow 0.3s, transform 0.3s; /* Add smooth shadow and transform transitions */
+}
+
+.inner-container:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .inner-container {
+        width: 90%;
+    }
+   
+}
+
+@media (max-width: 992px) {
+    .inner-container {
+        width: 95%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .inner-container {
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 576px) {
+    .inner-container {
+        padding: 10px;
+    }
+ 
+}

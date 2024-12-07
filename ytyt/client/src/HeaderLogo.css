@@ -1,0 +1,67 @@
+/* Header Container */
+.headContainer {
+    display: flex; 
+    justify-content: space-between; /* Distribute items with space between */
+    align-items: center;   
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 5px;
+    position: fixed; /* Fix it at the top */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.headContainer:hover {
+    background-color: #e9ecef; /* Change background color on hover */
+}
+
+/* Logo */
+.headingLogo {
+    width: 30px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 15px; /* Adjust margin for better spacing */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.headingLogo:hover {
+    transform: scale(1.4); /* Slightly increase size on hover */
+    object-fit: cover;
+
+}
+
+/* Navigation Links */
+.top-name {
+    margin-left: 10px; 
+    color: #263a3d;
+    padding-right: 10px;
+    font-size: 1rem; /* Relative font size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transition */
+    border-bottom: 2px solid transparent; /* Initial border-bottom */
+}
+
+.top-name:hover {
+    color: #007bff; /* Change color on hover */
+    border-bottom: 2px solid #007bff; /* Add bottom border on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .headContainer {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 10px;
+    }
+    .top-name {
+        margin: 5px 0; /* Adjust margin for stacked items */
+        text-align: center; /* Center text for better appearance */
+    }
+    .headingLogo {
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+}
